@@ -1,4 +1,4 @@
-<?php if(!defined('BASEPATH')) exit ("no direct script access allowed controller");
+	<?php if(!defined('BASEPATH')) exit ("no direct script access allowed controller");
 class Admin_info extends CI_Controller {
 //读取各个表信息的类
 

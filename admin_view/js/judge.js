@@ -1,8 +1,8 @@
 function judge(){
 	$.ajax({
 				type:"POST",
-				// url:"http://localhost/newindex/index.php/admin_view/judge_session",
-				url:"http://newindex.stuzone.com/index.php/admin_view/judge_session",
+				url:"http://localhost:81/newindex/index.php/admin_view/judge_session",
+				// url:"http://newindex.stuzone.com/index.php/admin_view/judge_session",
 				dataType:"json",
 				
 				success:function(data){
@@ -20,8 +20,8 @@ $(document).ready(function(){
 	$("#exit_sys").click(function(){
 		$.ajax({
 				type:"POST",
-				// url:"http://localhost/newindex/index.php/admin_view/des_session",
-				url:"http://newindex.stuzone.com/index.php/admin_view/des_session",
+				url:"http://localhost/newindex:81/index.php/admin_view/des_session",
+				// url:"http://newindex.stuzone.com/index.php/admin_view/des_session",
 				dataType:"json",
 				success:function(){
 					

@@ -19,8 +19,8 @@ $(document).ready(function(){
 
 			$.ajax({
 				type:"POST",
-				// url:"http://localhost/newindex/index.php/admin_view/stu_login",
-				url:"http://newindex.stuzone.com/index.php/admin_view/stu_login",
+				url:"http://localhost:81/newindex/index.php/admin_view/stu_login",
+				// url:"http://newindex.stuzone.com/index.php/admin_view/stu_login",
 				dataType:"json",
 				data:{user:user,pass:pass},
 					
@@ -34,8 +34,8 @@ $(document).ready(function(){
 			});
 			$.ajax({
 				type:"POST",
-				// url:"http://localhost/newindex/index.php/admin_info/updateData",
-				url:"http://newindex.stuzone.com/index.php/admin_info/updateData",
+				url:"http://localhost:81/newindex/index.php/admin_info/updateData",
+				// url:"http://newindex.stuzone.com/index.php/admin_info/updateData",
 				dataType:"json",
 
 				success:function(){

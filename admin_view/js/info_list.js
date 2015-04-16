@@ -4,8 +4,8 @@ $(document).ready(function(){
 	$.ajax({
 		type:"GET",
 		contentType: "application/json",
-		// url:"http://localhost/newindex/index.php/admin_view/stu_info",
-		url:"http://newindex.stuzone.com/index.php/admin_view/stu_info",
+		url:"http://localhost:81/newindex/index.php/admin_view/stu_info",
+		// url:"http://newindex.stuzone.com/index.php/admin_view/stu_info",
 
 		async:true,
 		dataType:'json',
@@ -38,8 +38,8 @@ $(document).ready(function(){
 				title_num = $(this).attr("data");
 				$.ajax({
 						type:"POST",
-						// url:"http://localhost/newindex/index.php/admin_view/modify_title",
-						url:"http://newindex.stuzone.com/index.php/admin_view/modify_title",
+						url:"http://localhost:81/newindex/index.php/admin_view/modify_title",
+						// url:"http://newindex.stuzone.com/index.php/admin_view/modify_title",
 						async:true,
 						data:{content:title_num},
 						
@@ -55,8 +55,8 @@ $(document).ready(function(){
 								$.ajax({
 
 										type:"POST",
-										// url:"http://localhost/newindex/index.php/admin_view/modify_title_out",
-										url:"http://newindex.stuzone.com/index.php/admin_view/modify_title_out",
+										url:"http://localhost:81/newindex/index.php/admin_view/modify_title_out",
+										// url:"http://newindex.stuzone.com/index.php/admin_view/modify_title_out",
 										async:true,
 										data:{modify_title_id:title_mod_id,modify_title_con:title_con},
 										dataType:"html",
