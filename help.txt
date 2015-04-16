@@ -1,0 +1,18 @@
+导入sql之后，调取文件在application/contrillers/admin_stuzone_api.php
+public function getReco()功能：获取推荐数据
+
+public function getInfo()功能：获取资讯数据
+
+public function getVision()功能：获取视觉数据
+
+public function getVideo()功能：u获取视频数据
+
+public function getDown()功能：获取下载数据
+
+public function getMarket()功能：获取市场数据
+
+public function getGuwen()功能：获取故问数据
+
+
+均是返回json数据，返回键有：id,any_title,any_link_addr,pic_addr(有两个模块有图片所以返回图片地址)
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>stuzone</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" mce_href="http://stuzone.com/bootstrap/img/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" mce_href= "http://stuzone.com/bootstrap/img/favicon.ico" href="http://stuzone.com/bootstrap/img/favicon.ico"/>
+
+    <link href="js/external/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.1/css/bootstrap.min.css">
+
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/basic.css">
+   
+    <link href="css/rte.css" rel="stylesheet">
+    
+	 <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+	 <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+
+
+	<script type="text/javascript" src="js/judge.js"></script>
+	<script type="text/javascript" src="js/info_list.js"></script>
+	<script src="js/external/jquery.hotkeys.js"></script>
+    <script src="js/external/google-code-prettify/prettify.js"></script>
+    <script src="js/bootstrap-wysiwyg.js"></script>
+    
+	
+</head>
+<body>
+	<div class="container well">
+		<h3>学生地带</h3>
+			<nav class="navbar navbar-default" role="navigation">
+			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav">
+			      <li class="active"><a href="./info_list.html">标题管理</a></li>
+			      <li><a href="./ann_list.html">通知管理</a></li>
+			      <li><a href="./add_ann.html">添加通知</a></li>
+			      	
+			    </ul>
+			  
+			    <ul class="nav navbar-nav navbar-right">
+			      <li><a href="#" id="exit_sys">退出系统</a></li>
+			     
+			    </ul>
+			  </div><!-- /.navbar-collapse -->
+			</nav>
+	
+	<hr class="primary" style="border:1px solid blue">
+		<div class="table-responsive">
+			<table class="table table-striped table-hover" id="info">
+				<thead>
+					<tr>
+						<td>编号</td>
+						<td>标题</td>
+						<td>频道</td>
+						
+						<td>操作</td>
+					</tr>
+				</thead>
+				
+			</table>
+
+
+		</div>
+
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">修改标题</h4>
+      </div>
+      <div class="modal-body">
+        	
+		    <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+
+		 
+		        <div class="btn-group">
+		          <a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="icon-bold"></i></a>
+		          <!-- <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="icon-italic"></i></a> -->
+		          <a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="icon-strikethrough"></i></a>
+		          <a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="icon-underline"></i></a>
+		        </div>
+		        <div class="btn-group">
+		          <a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="icon-list-ul"></i></a>
+		          <a class="btn" data-edit="insertorderedlist" title="Number list"><i class="icon-list-ol"></i></a>
+		          <a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="icon-indent-left"></i></a>
+		          <a class="btn" data-edit="indent" title="Indent (Tab)"><i class="icon-indent-right"></i></a>
+		        </div>
+		        <div class="btn-group">
+		          <a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="icon-align-left"></i></a>
+		          <a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="icon-align-center"></i></a>
+		          <a class="btn" data-edit="justifyright" ><i class="icon-align-right"></i></a>
+		          <a class="btn" data-edit="justifyfull" ><i class="icon-align-justify"></i></a>
+		        </div>
+		        <div class="btn-group">
+		    		  <a class="btn dropdown-toggle" data-toggle="dropdown" title="Hyperlink"><i class="icon-link"></i></a>
+		    		    <div class="dropdown-menu input-group-sm" id="linktext">
+		    			    <input class="form-control" placeholder="URL" type="text" data-edit="createLink"/><br>
+		    			    <button class="btn btn-primary btn-sm pull-right" type="button">Add</button>
+		            </div>
+		        </div>
+		        <div class="btn-group">
+		          <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="icon-text-height"></i>&nbsp;<b class="caret"></b></a>
+		            <ul class="dropdown-menu">
+		            <li><a data-edit="fontSize 4"><font size="4">Huge</font></a></li>
+		            <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
+		            <li><a data-edit="fontSize 2"><font size="2">Small</font></a></li>
+		            </ul>
+		        </div>
+		        <div class="btn-group">
+		          <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="icon-font"></i><b class="caret"></b></a>
+		            <ul class="dropdown-menu">
+		            </ul>
+		        </div>
+		       
+		        
+		       <!--  <div class="btn-group">
+		          <a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="icon-undo"></i></a>
+		          <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
+		        </div> -->
+		     
+		    </div>
+		    <div id="editor">
+		            
+		    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">不改</button>
+        <button type="button" class="btn btn-primary" id = "submit_mod">修改保存</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</body>
+<script type="text/javascript" src="js/rte.js"></script>
+
+</html>
