@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/newstuzone/';
+$config['base_url']	= 'http://localhost:81/newindex/';
 $config['css'] = 'data/css';
 $config['js'] = 'data/js';
 $config['img'] = 'data/img';

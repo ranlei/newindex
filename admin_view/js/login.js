@@ -26,7 +26,7 @@ $(document).ready(function(){
 					
 				success:function(data){
 					if(data==user){
-						location.href="info_list.html";
+						location.href="ann_list.html";
 					}else{
 						location.href="index.html";
 					}
