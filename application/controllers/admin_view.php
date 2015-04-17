@@ -53,7 +53,10 @@ class Admin_view extends CI_Controller
 
 
 		public function stu_ann(){ //通知公搞信息
-			$con = $this->input->post("content");
+			$con = array('content' => $this->input->post("content"),
+						'pic' => $this->input->post('pic'),
+						'title' => $this->input->post('title'));
+
 			$this->admin_model->add_ann($con);
 			
 		}

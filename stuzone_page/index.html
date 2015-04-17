@@ -1,348 +1,349 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>学生地带</title>
-	<meta name="keywords" content="学生地带，中南民族大学，学生门户网站，网络直播平台，学生资讯集团，比特工场，月芽影像，学生工作通讯"/>
-	<meta  name="description" content="学生地带是由中南民族大学学生工作部（处）主办，学生资讯集团负责研发运营，以提升大学生活 品质为核心定位的学生门户网站。网站包括资讯、视频、视觉、深度、导航、杂志、微博、下载8个频道，向全媒体运营模式迈进" />
-	<meta name="author" content="学生地带,比特工场,c1avie" />
-	<link rel="shortcut icon" href="images/favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
-	<script type="text/javascript" src="js/html5.js"></script>
-	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="js/visionScroll.js"></script>
-	<script type="text/javascript" src="js/json.js"></script>
-	<script type="text/javascript" src="js/jquery.lazyload.js"></script>
-	<script type="text/javascript">
-		$(function() {
-			$("img").lazyload({
-				effect: "fadeIn"
-			});
+<!DOCTYPE html>
+
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<title>DEEPHOLM</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="zhengyi/css/prettyPhoto.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="stylesheets/flexslider.css" type="text/css" media="screen" /> <!-- Slider Stylesheet -->
+<link rel="stylesheet" href="stylesheets/reset.css">
+<link rel="stylesheet" href="stylesheets/style.css">
+<link href='http://fonts.useso.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="old_page/js/html5.js"></script>
+<script type="text/javascript" src="old_page/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="old_page/js/visionScroll.js"></script>
+
+<script type="text/javascript" src="old_page/js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="./javascript/content_list.js"></script>
+
+</head>
+
+<body>
+<div id="top"> <!-- Top Div Open -->
+<div id="topband">
+	<div id="logo"> <!-- Logo Div -->
+			<img src="images/logofooter.png" alt="logo">
+	</div> <!-- Closes Logo Div -->
+</div>
+
+<div id="menuband">
+
+	<ul id="menu1">
+			<li><a href="#top" class="smoothScroll">HOME</a></li> <!-- menu item -->
+			
+			<li><a href="#work" class="smoothScroll">OVERALL</a></li> <!-- menu item -->
+			
+			<li><a href="#contactus" class="smoothScroll">CONTACT</a></li> <!-- menu item -->
+	</ul>
+
+		<select onchange="MobilescrollToThis(this.value)" name="dropdpown">
+				<option selected="selected" value>Menu</option> 			    
+			    <option value="#top" >TOP</option> 
+			    <option value="#overall">OVERALL</option> 
+			    <option value="#contactus">CONTACT</option> 
+  		</select> 
+
+</div>
+
+<!-- Intro Text -->
+	<div id="intro"> <!-- intro div open -->
+
+		<p class="introh3"><span class="dottedline_left"></span>Welcome to the<span class="dottedline_right"></span></p>
+		<p class="introh1">Deepholm Make Up</p>
+		<p class="introh4">We create beautiful makeup for girl</p>
+	</div> <!-- intro div close -->
+
+
+<!-- Social Icons -->
+		<div class="topsocialicons">
+
+					<div class="circlelarge" id="facebookiconlarge">
+						<a href="#"><img class="contactsocialicon2" src="images/facebook-icn.png" alt="facebook"></a>
+					</div>
+
+					<div class="circlelarge" id="twittericonlarge">
+						<a href="#"><img class="contactsocialicon2" src="images/twitter-icn.png" alt="twitter"></a>
+					</div>
+
+					<div class="circlelarge" id="behanceiconlarge">
+						<a href="#"><img class="contactsocialicon2" src="images/behance-icn.png" alt="googleplus"></a>
+					</div>
+
+					<div class="circlelarge" id="dribbbleiconlarge">
+						<a href="#"><img class="contactsocialicon2" src="images/dribbble-icn.png" alt="dribbble"></a>
+					</div>
+
+					<div class="circlelarge" id="linkediniconlarge">
+						<a href="#"><img class="contactsocialicon2" src="images/linkedin-icn.png" alt="linkedin"></a>
+					</div>
+
+		</div>
+
+
+</div>	<!-- Closes top Div -->
+
+
+<!-- Sticky Nav Bar -->
+	<div id="hiddenmenu"> <!-- Hidden Menu bar div open -->
+		<ul id="menu">
+			<li><a href="#top" class="smoothScroll">HOME</a></li> <!-- menu item -->
+			
+			<li><a href="#overall" class="smoothScroll">OVERALL</a></li> <!-- menu item -->
+			<li><a href="#contactus" class="smoothScroll">CONTACT</a></li> <!-- menu item -->
+		</ul>
+
+		<select class="mobilemenu" onchange="MobilescrollToThis(this.value)" name="dropdpown">
+				<option selected="selected" value>Menu</option> 			    
+			    <option value="#top" >TOP</option> 
+			    <option value="#OVERALL">OVERALL</option>   
+			    <option value="#contactus">CONTACT</option> 
+  		</select> 
+
+	</div> <!-- Hidden Menu bar div close -->
+
+<div id="navcover"> <!-- Div to hide nav sticky nav bar when at top of page -->
+</div> <!-- close hide nav div -->
+
+		<!-- WOrk Starts Here -->
+
+	<div id="work"> <!-- work div open -->
+		<div class="container" id="workcontent">  <!-- work content div open -->
+			<h1>OVER <span>LOOK</span></h1> <!-- Title of Work page -->
+		
+<br>
+<br>
+	        <div class="flexslider"> <!-- Slider gallery starts here -->
+	          		<ul class="slides">
+	            	<li>
+	  	    	    <img src="images/Slider1.jpg" alt="galleryitem"  /> <!-- Slider gallery image here -->
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="images/Slider2.jpg" alt="galleryitem" /> <!-- Slider gallery image here -->
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="images/Slider3.jpg" alt="galleryitem" /> <!-- Slider gallery image here -->
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="images/Slider4.jpg" alt="galleryitem" /> <!-- Slider gallery image here -->
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="images/Slider5.jpg" alt="galleryitem" /> <!-- Slider gallery image here -->
+	  	    		</li>
+	          		</ul>
+	        </div> <!-- Slider gallery ends here -->
+	        <div class="content">
+	        	
+
+	        </div>
+			<div class="clear"></div> <!-- clear div -->
+
+
+		</div> <!-- workcontent close -->
+	</div> <!-- work close -->
+
+
+<div class="patterngreenup"></div>
+		
+<!-- Contact Info Starts Here -->
+
+	<div id="contactus"> <!-- contactus open div -->
+		
+
+		<div id="contact_content" class="container"> <!-- contact content enclosure div open -->
+
+			<div id="contactheading"> <!-- contact Heading div -->
+
+				<h1>Contact <span>Us</span></h1> <!-- contact Heading Text -->
+
+				<p class="fifteen">What are you waiting for? If you like what you see drop us a line by filling out the form below! Let's make it happen!</p> <!-- contact intro text -->
+
+
+			</div> <!-- contact Heading div close-->
+
+
+			<div class="contactleft"> <!-- left section div -->
+				
+			
+
+			<div id="contact">
+
+			<div id="responsemessage">Your message has been sent successfully.</div>
+
+			<form id="myform" method="post" action="contact.php" name="contactform">
+
+
+				<p class="contactlabel">Name</p>
+				<input class="inputoneline" name="form_name" type="text" id="form_name" size="20" value="" />
+
+				<p class="contactlabel">Email</p>
+				<input class="inputoneline" name="form_email" type="text" id="form_email" size="20" value="" />
+
+				<p class="contactlabel">Message</p>
+				<textarea name="msg_text" cols="40" rows="12" id="msg_text"></textarea>
+
+				<input type="submit" class="submit" id="submit" value="Submit" name="mysubmit" />
+
+			</form>
+			</div>	
+			</div>
+
+			<div class="contact_middle"> <!-- Contact Middle section div -->
+
+				<p class="headingfont9">Our Contact Info</p>
+
+				<p id="contactparagraph">If you can't wait to get started and want to get a hold of us a call. Or drive to our office and get our attention. We are ready to get things goin for you! Hurry up! We are waiting to here from you!</p>
+				
+
+				<div id="address" class="contactitems">
+					<div class="circle2"><img class="contactimage2" src="images/address-icon.png" alt="Address"></div>
+					<h5>555 The Big Lake Rd. The Spot, CA 90210</h5>
+					<div class="smallseparatecontact2"></div>
+				</div>
+
+				<div id="email" class="contactitems">
+					<div class="circle2"><img class="contactimage2" src="images/phone-icon.png" alt="email"></div>
+					<h5>(555)-555-5555</h5>
+					<div class="smallseparatecontact2"></div>
+				</div>
+
+				<div id="phone" class="contactitems">
+					<div class="circle2"><img class="contactimage2" src="images/email-icon.png" alt="phone"></div>
+					<h5>info@someplace.com</h5>
+					<div class="smallseparatecontact2"></div>
+				</div>
+
+				<p class="headingfont9" >Social Media</p>
+				<div class="contactsocialicons">
+
+					<div class="circle" id="facebookicon">
+						<a href="#"><img class="contactsocialicon" src="images/facebook-icon.png" alt="facebook"></a>
+					</div>
+
+					<div class="circle" id="twittericon">
+						<a href="#"><img class="contactsocialicon" src="images/twitter-icon.png" alt="twitter"></a>
+					</div>
+
+					<div class="circle" id="behanceicon">
+						<a href="#"><img class="contactsocialicon" src="images/behance-icon.png" alt="behance"></a>
+					</div>
+
+					<div class="circle" id="dribbbleicon">
+						<a href="#"><img class="contactsocialicon" src="images/dribbble-icon.png" alt="dribbble"></a>
+					</div>
+
+					<div class="circle" id="linkedinicon">
+						<a href="#"><img class="contactsocialicon" src="images/linkedin-icon.png" alt="linkedin"></a>
+					</div>
+
+					</div>
+
+			</div>
+
+		</div>
+
+		<div class="clear40"></div>
+	</div>
+	<div class="patterndark"></div>
+	
+			<div id="iphonemap" class="contactsection">
+
+				<br />
+			</div>
+
+
+<!-- Footer Info Starts Here -->
+<div class="patternwhite"></div>
+	<div id="footer"> <!-- footer div open -->
+
+		<div id="footercontent" class="container"> <!-- footer content wrapper div -->
+			<img src="images/logofooter.png" alt="footerlogo"> <!-- footer logo image here -->
+			<br> <!-- line break -->
+			<br> <!-- line break -->
+			<p id="copyright"> &#169; Jeongyee waiting for Deepholm</a> - FOREVER </p> <!-- copyright text here -->
+ 
+		</div> <!-- footer content wrapper div close -->
+
+	</div> <!-- footer div close -->
+
+<!-- JS
+================================================== -->
+<script type="text/javascript" src="javascript/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="javascript/script.js"></script>
+<script type="text/javascript" src="javascript/jquery.ez-bg-resize.js"></script>
+<script type="text/javascript" src="prettyphoto/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="javascript/smoothscrolling.js"></script>
+<script src="javascript/jquery.sticky.js" type="text/javascript"></script>
+<script src="javascript/css_browser_selector.js" type="text/javascript"></script> 
+<script src="javascript/formsubmit.js"></script>
+
+<!-- Sticky nav2 initiation 
+==================================================== -->
+	<script>
+		$(document).ready(function(){
+			$("#hiddenmenu").sticky({topSpacing:0});
 		});
 	</script>
 
-</head>
-<body>
-<style type="text/css">
-	#box #gameMerry:hover {
-		color:#CDDD54;
-	}
-	#box #gameMerry {
-		font-size:30px;color:#B3A61C;;font-weight:500;
-	}
-</style>
-<!-- 弹出层部分 -->
-<div id="box">  
-    <span id="closeBtn" style="color:white">关闭</span>  
-    <p><a id="gameMerry"  href="http://gamemake.org/html5_game/shengdan/">挑战一下</a></p>
-</div>  
-　　  
+<!-- Initiate PrettyPhoto Plugin
+==================================================== -->
+<script type="text/javascript" charset="utf-8">
 
-	<header>
-		<div class="logo">
-			<img src="images/logo.png" width="214" height="64" title="学生地带" alt="学生地带" />
-		</div>
-		<div class="stuzone-title">
-			<p>提升大学生生活品质</p>
-			<p>中南民族大学学生门户网站</p>
-		</div>
-		<nav>
-			<ul class="nav">
-				<li>
-					<!-- <a href="http://www.stuzone.com/zone_info/" target="_blank">资讯</a> -->
-					<a href="#inline1" id="various1">资讯</a>
-				</li>
-				<li>
-					<a href="http://guwen.stuzone.com/" target="_blank">故问</a>
-				</li>
-				<li>
-					<a href="http://www.stuzone.com/zone_vision/" target="_blank">视觉</a>
-				</li>
-				<li>
-					<a href="#" target="_blank">专题</a>
-				</li>
-				<li>
-					<a href="http://www.stuzone.com/zone_video/" target="_blank">视频</a>
-				</li>
-				<li>
-					<a href="http://www.stuzone.com/zone_download/" target="_blank">下载</a>
-				</li>
-				<!-- <li>
-					<a href="http://market.stuzone.com/" target="_blank">学生市场</a>
-				</li> -->
-				<li id="drop-menu">
-					<a href="#">更多</a>
-					<ul class="drop-menu-text">
-						<li>
-							<a href="http://www.stuzone.com/zone_scuec/">导航</a>
-						</li>
-						<li>
-							<a href="http://upan.us/">云u盘</a>
-						</li>
-						<li>
-							<a href="http://act.stuzone.com/">乐活</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<section class="banner">
-		<div class="banner-img">
-			<!-- <a href="#"><img src="images/banner1.jpg" height="350" title="资讯民大" alt="资讯民大" /></a>
-			<a href="#" class="nodisplay"><img height="350" title="乐活网" src="images/banner2.jpg" alt="乐活网" /></a>
-			<a href="http://upan.us/" class="nodisplay"><img height="350" title="云U盘" src="images/banner3.jpg" alt="云U盘" /></a>
-			<a href="http://guwen.stuzone.com/" class="nodisplay" ><img height="350" title="故问" src="images/banner4.jpg" alt="故问" /></a> -->
-			<a href="#" class="banner1"></a>
-			<a href="#" class="banner2"></a>
-			<a href="http://upan.us/" class="banner3"></a>
-			<a href="http://guwen.stuzone.com/" class="banner4" ></a>
-		</div>
-		<div class="banner-nav">
-			<div class="banner-nav-inner">
-				<a class="prev" href="#">prev</a>
-				<div class="banner-change">
-					<span class="banner-word">资讯民大</span>
-					<span class="banner-word nodisplay">乐活网</span>
-					<span class="banner-word nodisplay">资源下载</span>
-					<span class="banner-word nodisplay">故问</span>
-				</div>
-				<a class="next" href="#">next</a>
-				<div class="banner-trigger">
-					<a href="#" class="trigger img-curr">1</a>
-					<a href="#" class="trigger">2</a>
-					<a href="#" class="trigger">3</a>
-					<a href="#" class="trigger">4</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="content">
-		<section class="main">
-			<div class="recommend main-div">
-				<div class="main-div-title">
-					<span>
-						<img src="images/recom.png" title="推荐" alt="推荐" />
-					</span>
-					<span class="main-div-title-word">推荐</span>
-				</div>
-				<div class="recommend-details main-div-details">
-					<!-- insert recommend data -->
-				</div>
-			</div>
-			<div class="infor main-div">
-				<div class="main-div-title">
-					<span>
-						<i>资讯</i>
-					</span>
-					<span class="main-div-title-word"><a href="http://www.stuzone.com/zone_info/">资讯</a></span>
-				</div>
-				<div class="infor-details main-div-details">
-					<!-- insert infor-details data -->
-				</div>
-			</div>
-			<div class="vision main-div">
-				<div class="main-div-title">
-					<span>
-						<i>视觉</i>
-					</span>
-					<span class="main-div-title-word"><a href="http://www.stuzone.com/zone_vision/">视觉</a></span>
-				</div>
-				<div id="vision-scroll" class="vision-scroll">
-					<div class="vision-scroll-mask">
-						<!-- insert vision data -->
-					</div>
-					<ul class="vision-scroll-nav">
-						<li>
-							<img src="images/vision-arrow-left.png" width="19" height="19" title="左" alt="左" />
-						</li>
-						<li>
-							<img src="images/vision-arrow-right.png" width="19" height="19" title="右" alt="右" />
-						</li>
-					</ul>
-					<div style="clear: both;"></div>
-				</div>
-			</div>
-			<div class="video main-div">
-				<div class="main-div-title">
-					<span>
-						<i>视频</i>
-					</span>
-					<span class="main-div-title-word"><a href="http://www.stuzone.com/zone_video/">视频</a></span>
-				</div>
-				<div class="video-details main-div-details">
-					<!-- insert video data -->
-				</div>
-			</div>
-			<!-- <div class="market main-div">
-				<div class="main-div-title">
-					<span>
-						<i>学生市场</i>
-					</span>
-					<span class="main-div-title-word"><a href="http://market.stuzone.com/">学生市场</a></span>
-				</div>
-				<div class="market-details">
-					
-				</div>
-			</div> -->
-			<div class="know main-div">
-				<div class="main-div-title">
-					<span>
-						<i>故问</i>
-					</span>
-					<span class="main-div-title-word"><a href="http://guwen.stuzone.com/">故问</a></span>
-				</div>
-				<div class="know-details main-div-details">
-					<!-- insert know data -->
-				</div>
-			</div>
-		</section>
-		<aside class="aside">
-			<div class="notice">
-				<p id="today"></p>
-				<p id="notice-curr">请于3月2日-3月10日，到大活三楼进行学生证充磁，最新情况请关注学生地带新浪微博。</p>
-				<p class="more-notice"><a href="./ann_screen.html">更多通知</a></p>
-			</div>
-			<div class="aside-div">
-				<h2>常用链接</h2>
-				<div id="linking" class="aside-div-details">
-					<ul>
-						<li>
-							<a href="http://ssfw.scuec.edu.cn/ssfw/index.do">教务系统</a>
-						</li>
-						<li>
-							<a href="http://ids.scuec.edu.cn/amserver/UI/Login?goto=http://my.scuec.edu.cn/index.portal">信息门户</a>
-						</li>
-						<li>
-							<a href="http://www.lib.scuec.edu.cn/">图书馆</a>
-						</li>
-						<li>
-							<a href="http://www.scuec.edu.cn/psyc/">心理咨询中心</a>
-						</li>
-						<li>
-							<a href="http://labsystem.scuec.edu.cn/">实验室开放管理系统</a>
-						</li>
-						<li>
-							<a href="http://bbs.scuec.edu.cn/">民大论坛</a>
-						</li>
-						<li>
-							<a href="http://www.nanhubbs.com/">南湖虫子</a>
-						</li>
-						<li>
-							<a href="http://www.scuec.edu.cn/s/1/t/560/p/2/list.htm">民大官网通知公告</a>
-						</li>
-					</ul>
-					<ul>
-						<li>
-							<a href="http://www.scuec.edu.cn/stu/">学工在线</a>
-						</li><li>
-							<a href="http://www1.scuec.edu.cn/stu/affairs/?class-zuixingonggao.htm">学工在线最新公告</a>
-						</li>
-						<li>
-							<a href="http://www1.scuec.edu.cn/tuanwei/news/?class-zhongyaotongzhi.htm">青年网团委通知</a>
-						</li>
-						<li>
-							<a href="http://jpk.scuec.edu.cn/">中南民大精品课程</a>
-						</li>
-						<li>
-							<a href="http://www.cnki.net/">中国知网</a>
-						</li>
-						<li>
-							<a href="http://g.wanfangdata.com.cn/Default.aspx">万方数据知识平台</a>
-						</li>
-						<li>
-							<a href="http://tieba.baidu.com/f?kw=%D6%D0%C4%CF%C3%F1%D7%E5%B4%F3%D1%A7&fr=ala0">中南民大百度贴吧</a>
-						</li>
-					</ul>
-				</div>
-				<h2><a href="">下载</a></h2>
-				<div id="aside-div-download" class="aside-div-details">
-					<!-- insert download data -->
-				</div>
-				<h2>本月排行榜</h2>
-				<div class="aside-rank aside-div-details">
-					<!-- insert rank data -->
-				</div>
-			</div>
-			<div class="special">
-				<a href="http://cv.qiaobutang.com/">
-					<img src="images/topic_pic/qiaobujianli.png" title="专题网" alt="专题网" />
-				</a>
-			</div>
-			<div class="share">
-				<h2>一键关注我们</h2>
-				<p>
-					<a href="#"><img src="images/weixin.jpg" width="32" height="32" title="微信" alt="微信" /></a>
-					<a href="#"><img src="images/sina.jpg" width="32" height="32" title="新浪微博" alt="新浪微博" /></a>
-					<a href="#"><img src="images/renren.jpg" width="32" height="32" title="人人" alt="人人" /></a>
-					<a href="#"><img src="images/qzone.jpg" width="32" height="32" title="qq空间" alt="qq空间" /></a>
-				</p>
-			</div>
-		</aside>
-	</section>
-	<footer>
-		<div class="footer-inner">
-			<h3>友情链接</h3>
-			<div class="footer-link">
-				<p>
-					<a href="http://www.univs.cn/">大学生在线</a>
-					<a href="http://www.youthol.cn/">青春在线</a>
-					<a href="http://www.hustonline.net/">华中大在线</a>
-					<a href="http://www.ziqiang.net/">武大自强学堂网</a>
-					<a href="http://campus.gdufs.edu.cn/">广外地带网</a>
-					<a href="http://www.wutnews.net/">武汉理工经纬网</a>
-					<a href="http://www.hzu.net.cn/">华大桂声</a>
-					<a href="http://stu.fudan.edu.cn/v7/">复旦学生网</a>
-				</p>
-				<p>
-					<a href="http://www.scuec.edu.cn/">中南民族大学官方网站</a>
-					<a href="http://news.scuec.edu.cn/xww/">新闻网</a>
-					<a href="http://www1.scuec.edu.cn/tuanwei/">青年网</a>
-					<a href="http://nhszw.scuec.edu.cn/">南湖思政网</a>
-					<a href="http://video.scuec.edu.cn/">电视台</a>
-					<a href="http://online.scuec.edu.cn/gbt/">广播台</a>
-					<a href="http://bbs.scuec.edu.cn/">民大论坛</a>
-					<a href="http://online.scuec.edu.cn/xzw/">学子网</a>
-				</p>
-			</div>
-			<div class="about">
-				<ul>
-					<li>
-						<a href="#">关于我们</a>
-					</li>
-					<li>
-						<a href="#">加入我们</a>
-					</li>
-					<li>
-						<a href="#">联系我们</a>
-					</li>
-					<li>
-						<a href="#">免责声明</a>
-					</li>
-					<li>
-						<a href="#">旧版入口</a>
-					</li>
-					<li>
-					<img src="http://tongji.baidu.com/web/welcome/ico?s=c9b5b46da4c6d65a93eef81ac431858b">
-					</li>
-				</ul>
-			</div>
-			<div class="copyright">
-				&copy;2011-2013 stuzone.com 版权所有 鄂ICP备05003346号 Powered By &nbsp;&nbsp;比特工场
-			</div>
-		</div>
-	</footer>
-	<a href="#top" id="scroll-to-top" title="Scroll to Top">Top</a>
+		$(document).ready(function(){
+			$("a[rel^='prettyPhoto']").prettyPhoto({
+				social_tools: false,
+				theme: 'light_square'
+			});
+		});
+</script>
 
-	<script type="text/javascript" src="js/time.js"></script>
-	<script type="text/javascript" src="js/bannerSlider.js"></script>
-	<script type="text/javascript" src="js/core.js"></script>
-	<script type="text/javascript">
-		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-			document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.
-			js%3Fc9b5b46da4c6d65a93eef81ac431858b' type='text/javascript'%3E%3C/script%3E"));
-	</script>
+	<!-- FlexSlider 
+==================================================== -->
+  <script defer src="javascript/jquery.flexslider.js"></script>
+  
+  <script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        smoothHeight: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
 
-</body>
-</html>
+<!-- Mobile Menu Smooth Scroll Funtion 
+==================================================== -->
+<script type="text/javascript"> 
+    function MobilescrollToThis(target){
+          var theArray = target.split('#');
+          var desiredElement = jQuery('#' + theArray[1]).offset().top;
+          jQuery('html,body').animate({ scrollTop: desiredElement}, 'slow');
+        }
+    
+  </script>
+
+  
+<!-- End Document
+================================================== -->
+
+</body> <!-- close body -->
+
+
+</html> <!-- close html -->
+
+
+	
+

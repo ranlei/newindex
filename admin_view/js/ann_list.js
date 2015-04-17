@@ -13,7 +13,7 @@ $(document).ready(function(){
 			var info = "<tbody>";
 			$.each(data,function(i,n){
 				
-					info += "<tr><td>" +i+ "</td>" + "<td id=\"title_info\">" + n['content'] + "</td>" + "<td><button "+ "data=\""+n['id'] +"\" type=\"button\" data-toggle=\"modal\" data-target=\"#myModal\" class=\"infob btn-primary btn-sm\">修改</button>&nbsp;&nbsp;<button "+ "data=\""+n['id'] +"\" type=\"button\" data-toggle=\"modal\" class=\" del_ann btn-primary btn-sm\">删除</button></td></tr>";
+					info += "<tr><td>" +i+ "</td>" + "<td id=\"title_info\">" + n['title'] + "</td>" + "<td><button "+ "data=\""+n['id'] +"\" type=\"button\" data-toggle=\"modal\" data-target=\"#myModal\" class=\"infob btn-primary btn-sm\">修改</button>&nbsp;&nbsp;<button "+ "data=\""+n['id'] +"\" type=\"button\" data-toggle=\"modal\" class=\" del_ann btn-primary btn-sm\">删除</button></td></tr>";
 				
 			});
 			info += "</tbody>";

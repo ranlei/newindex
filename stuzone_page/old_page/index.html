@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>学生地带</title>
+	<meta name="keywords" content="学生地带，中南民族大学，学生门户网站，网络直播平台，学生资讯集团，比特工场，月芽影像，学生工作通讯"/>
+	<meta  name="description" content="学生地带是由中南民族大学学生工作部（处）主办，学生资讯集团负责研发运营，以提升大学生活 品质为核心定位的学生门户网站。网站包括资讯、视频、视觉、深度、导航、杂志、微博、下载8个频道，向全媒体运营模式迈进" />
+	<meta name="author" content="学生地带,比特工场,c1avie" />
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<script type="text/javascript" src="js/html5.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/visionScroll.js"></script>
+	<script type="text/javascript" src="js/json.js"></script>
+	<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("img").lazyload({
+				effect: "fadeIn"
+			});
+		});
+	</script>
+
+</head>
+<body>
+<style type="text/css">
+	#box #gameMerry:hover {
+		color:#CDDD54;
+	}
+	#box #gameMerry {
+		font-size:30px;color:#B3A61C;;font-weight:500;
+	}
+</style>
+<!-- 弹出层部分 -->
+<div id="box">  
+    <span id="closeBtn" style="color:white">关闭</span>  
+    <p><a id="gameMerry"  href="http://gamemake.org/html5_game/shengdan/">挑战一下</a></p>
+</div>  
+　　  
+
+	<header>
+		<div class="logo">
+			<img src="images/logo.png" width="214" height="64" title="学生地带" alt="学生地带" />
+		</div>
+		<div class="stuzone-title">
+			<p>提升大学生生活品质</p>
+			<p>中南民族大学学生门户网站</p>
+		</div>
+		<nav>
+			<ul class="nav">
+				<li>
+					<!-- <a href="http://www.stuzone.com/zone_info/" target="_blank">资讯</a> -->
+					<a href="#inline1" id="various1">资讯</a>
+				</li>
+				<li>
+					<a href="http://guwen.stuzone.com/" target="_blank">故问</a>
+				</li>
+				<li>
+					<a href="http://www.stuzone.com/zone_vision/" target="_blank">视觉</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">专题</a>
+				</li>
+				<li>
+					<a href="http://www.stuzone.com/zone_video/" target="_blank">视频</a>
+				</li>
+				<li>
+					<a href="http://www.stuzone.com/zone_download/" target="_blank">下载</a>
+				</li>
+				<!-- <li>
+					<a href="http://market.stuzone.com/" target="_blank">学生市场</a>
+				</li> -->
+				<li id="drop-menu">
+					<a href="#">更多</a>
+					<ul class="drop-menu-text">
+						<li>
+							<a href="http://www.stuzone.com/zone_scuec/">导航</a>
+						</li>
+						<li>
+							<a href="http://upan.us/">云u盘</a>
+						</li>
+						<li>
+							<a href="http://act.stuzone.com/">乐活</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section class="banner">
+		<div class="banner-img">
+			<!-- <a href="#"><img src="images/banner1.jpg" height="350" title="资讯民大" alt="资讯民大" /></a>
+			<a href="#" class="nodisplay"><img height="350" title="乐活网" src="images/banner2.jpg" alt="乐活网" /></a>
+			<a href="http://upan.us/" class="nodisplay"><img height="350" title="云U盘" src="images/banner3.jpg" alt="云U盘" /></a>
+			<a href="http://guwen.stuzone.com/" class="nodisplay" ><img height="350" title="故问" src="images/banner4.jpg" alt="故问" /></a> -->
+			<a href="#" class="banner1"></a>
+			<a href="#" class="banner2"></a>
+			<a href="http://upan.us/" class="banner3"></a>
+			<a href="http://guwen.stuzone.com/" class="banner4" ></a>
+		</div>
+		<div class="banner-nav">
+			<div class="banner-nav-inner">
+				<a class="prev" href="#">prev</a>
+				<div class="banner-change">
+					<span class="banner-word">资讯民大</span>
+					<span class="banner-word nodisplay">乐活网</span>
+					<span class="banner-word nodisplay">资源下载</span>
+					<span class="banner-word nodisplay">故问</span>
+				</div>
+				<a class="next" href="#">next</a>
+				<div class="banner-trigger">
+					<a href="#" class="trigger img-curr">1</a>
+					<a href="#" class="trigger">2</a>
+					<a href="#" class="trigger">3</a>
+					<a href="#" class="trigger">4</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="content">
+		<section class="main">
+			<div class="recommend main-div">
+				<div class="main-div-title">
+					<span>
+						<img src="images/recom.png" title="推荐" alt="推荐" />
+					</span>
+					<span class="main-div-title-word">推荐</span>
+				</div>
+				<div class="recommend-details main-div-details">
+					<!-- insert recommend data -->
+				</div>
+			</div>
+			<div class="infor main-div">
+				<div class="main-div-title">
+					<span>
+						<i>资讯</i>
+					</span>
+					<span class="main-div-title-word"><a href="http://www.stuzone.com/zone_info/">资讯</a></span>
+				</div>
+				<div class="infor-details main-div-details">
+					<!-- insert infor-details data -->
+				</div>
+			</div>
+			<div class="vision main-div">
+				<div class="main-div-title">
+					<span>
+						<i>视觉</i>
+					</span>
+					<span class="main-div-title-word"><a href="http://www.stuzone.com/zone_vision/">视觉</a></span>
+				</div>
+				<div id="vision-scroll" class="vision-scroll">
+					<div class="vision-scroll-mask">
+						<!-- insert vision data -->
+					</div>
+					<ul class="vision-scroll-nav">
+						<li>
+							<img src="images/vision-arrow-left.png" width="19" height="19" title="左" alt="左" />
+						</li>
+						<li>
+							<img src="images/vision-arrow-right.png" width="19" height="19" title="右" alt="右" />
+						</li>
+					</ul>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			<div class="video main-div">
+				<div class="main-div-title">
+					<span>
+						<i>视频</i>
+					</span>
+					<span class="main-div-title-word"><a href="http://www.stuzone.com/zone_video/">视频</a></span>
+				</div>
+				<div class="video-details main-div-details">
+					<!-- insert video data -->
+				</div>
+			</div>
+			<!-- <div class="market main-div">
+				<div class="main-div-title">
+					<span>
+						<i>学生市场</i>
+					</span>
+					<span class="main-div-title-word"><a href="http://market.stuzone.com/">学生市场</a></span>
+				</div>
+				<div class="market-details">
+					
+				</div>
+			</div> -->
+			<div class="know main-div">
+				<div class="main-div-title">
+					<span>
+						<i>故问</i>
+					</span>
+					<span class="main-div-title-word"><a href="http://guwen.stuzone.com/">故问</a></span>
+				</div>
+				<div class="know-details main-div-details">
+					<!-- insert know data -->
+				</div>
+			</div>
+		</section>
+		<aside class="aside">
+			<div class="notice">
+				<p id="today"></p>
+				<p id="notice-curr">请于3月2日-3月10日，到大活三楼进行学生证充磁，最新情况请关注学生地带新浪微博。</p>
+				<p class="more-notice"><a href="./ann_screen.html">更多通知</a></p>
+			</div>
+			<div class="aside-div">
+				<h2>常用链接</h2>
+				<div id="linking" class="aside-div-details">
+					<ul>
+						<li>
+							<a href="http://ssfw.scuec.edu.cn/ssfw/index.do">教务系统</a>
+						</li>
+						<li>
+							<a href="http://ids.scuec.edu.cn/amserver/UI/Login?goto=http://my.scuec.edu.cn/index.portal">信息门户</a>
+						</li>
+						<li>
+							<a href="http://www.lib.scuec.edu.cn/">图书馆</a>
+						</li>
+						<li>
+							<a href="http://www.scuec.edu.cn/psyc/">心理咨询中心</a>
+						</li>
+						<li>
+							<a href="http://labsystem.scuec.edu.cn/">实验室开放管理系统</a>
+						</li>
+						<li>
+							<a href="http://bbs.scuec.edu.cn/">民大论坛</a>
+						</li>
+						<li>
+							<a href="http://www.nanhubbs.com/">南湖虫子</a>
+						</li>
+						<li>
+							<a href="http://www.scuec.edu.cn/s/1/t/560/p/2/list.htm">民大官网通知公告</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="http://www.scuec.edu.cn/stu/">学工在线</a>
+						</li><li>
+							<a href="http://www1.scuec.edu.cn/stu/affairs/?class-zuixingonggao.htm">学工在线最新公告</a>
+						</li>
+						<li>
+							<a href="http://www1.scuec.edu.cn/tuanwei/news/?class-zhongyaotongzhi.htm">青年网团委通知</a>
+						</li>
+						<li>
+							<a href="http://jpk.scuec.edu.cn/">中南民大精品课程</a>
+						</li>
+						<li>
+							<a href="http://www.cnki.net/">中国知网</a>
+						</li>
+						<li>
+							<a href="http://g.wanfangdata.com.cn/Default.aspx">万方数据知识平台</a>
+						</li>
+						<li>
+							<a href="http://tieba.baidu.com/f?kw=%D6%D0%C4%CF%C3%F1%D7%E5%B4%F3%D1%A7&fr=ala0">中南民大百度贴吧</a>
+						</li>
+					</ul>
+				</div>
+				<h2><a href="">下载</a></h2>
+				<div id="aside-div-download" class="aside-div-details">
+					<!-- insert download data -->
+				</div>
+				<h2>本月排行榜</h2>
+				<div class="aside-rank aside-div-details">
+					<!-- insert rank data -->
+				</div>
+			</div>
+			<div class="special">
+				<a href="http://cv.qiaobutang.com/">
+					<img src="images/topic_pic/qiaobujianli.png" title="专题网" alt="专题网" />
+				</a>
+			</div>
+			<div class="share">
+				<h2>一键关注我们</h2>
+				<p>
+					<a href="#"><img src="images/weixin.jpg" width="32" height="32" title="微信" alt="微信" /></a>
+					<a href="#"><img src="images/sina.jpg" width="32" height="32" title="新浪微博" alt="新浪微博" /></a>
+					<a href="#"><img src="images/renren.jpg" width="32" height="32" title="人人" alt="人人" /></a>
+					<a href="#"><img src="images/qzone.jpg" width="32" height="32" title="qq空间" alt="qq空间" /></a>
+				</p>
+			</div>
+		</aside>
+	</section>
+	<footer>
+		<div class="footer-inner">
+			<h3>友情链接</h3>
+			<div class="footer-link">
+				<p>
+					<a href="http://www.univs.cn/">大学生在线</a>
+					<a href="http://www.youthol.cn/">青春在线</a>
+					<a href="http://www.hustonline.net/">华中大在线</a>
+					<a href="http://www.ziqiang.net/">武大自强学堂网</a>
+					<a href="http://campus.gdufs.edu.cn/">广外地带网</a>
+					<a href="http://www.wutnews.net/">武汉理工经纬网</a>
+					<a href="http://www.hzu.net.cn/">华大桂声</a>
+					<a href="http://stu.fudan.edu.cn/v7/">复旦学生网</a>
+				</p>
+				<p>
+					<a href="http://www.scuec.edu.cn/">中南民族大学官方网站</a>
+					<a href="http://news.scuec.edu.cn/xww/">新闻网</a>
+					<a href="http://www1.scuec.edu.cn/tuanwei/">青年网</a>
+					<a href="http://nhszw.scuec.edu.cn/">南湖思政网</a>
+					<a href="http://video.scuec.edu.cn/">电视台</a>
+					<a href="http://online.scuec.edu.cn/gbt/">广播台</a>
+					<a href="http://bbs.scuec.edu.cn/">民大论坛</a>
+					<a href="http://online.scuec.edu.cn/xzw/">学子网</a>
+				</p>
+			</div>
+			<div class="about">
+				<ul>
+					<li>
+						<a href="#">关于我们</a>
+					</li>
+					<li>
+						<a href="#">加入我们</a>
+					</li>
+					<li>
+						<a href="#">联系我们</a>
+					</li>
+					<li>
+						<a href="#">免责声明</a>
+					</li>
+					<li>
+						<a href="#">旧版入口</a>
+					</li>
+					<li>
+					<img src="http://tongji.baidu.com/web/welcome/ico?s=c9b5b46da4c6d65a93eef81ac431858b">
+					</li>
+				</ul>
+			</div>
+			<div class="copyright">
+				&copy;2011-2013 stuzone.com 版权所有 鄂ICP备05003346号 Powered By &nbsp;&nbsp;比特工场
+			</div>
+		</div>
+	</footer>
+	<a href="#top" id="scroll-to-top" title="Scroll to Top">Top</a>
+
+	<script type="text/javascript" src="js/time.js"></script>
+	<script type="text/javascript" src="js/bannerSlider.js"></script>
+	<script type="text/javascript" src="js/core.js"></script>
+	<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+			document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.
+			js%3Fc9b5b46da4c6d65a93eef81ac431858b' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+
+</body>
+</html>

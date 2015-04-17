@@ -183,7 +183,10 @@
 		}
 
 		public function add_ann($con){ //添加通知
-			$sql = "INSERT INTO 2013_stuzone_ann (content) values('$con')";
+			$content = $con['content'];
+			$pic = $con['pic'];
+			$title = $con['title'];
+			$sql = "INSERT INTO 2013_stuzone_ann (content,pic_path,title) values('$content','$pic','$title')";
 			$query = $this->db->query($sql);
 
 		}
